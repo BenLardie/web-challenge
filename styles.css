@@ -1,0 +1,26 @@
+body {`
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: gray;
+}
+
+#container {
+    perspective: 25px;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+#inner {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    -webkit-mask-box-image: url("batman.svg");
+    mask-border: url("batman.svg");
+}
