@@ -100,6 +100,7 @@ video {
     bottom: 0;
     background-color: black;
     color: white;
+    padding-bottom: 50px;
 }
 
 li {
@@ -111,5 +112,6 @@ li {
 
 li:hover {
     transform: scale(1.1);
-    
+    cursor: pointer;
+    color: orange;
 }

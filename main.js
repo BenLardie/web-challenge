@@ -64,7 +64,7 @@ const onMouseMoveHandler = event => {
 const cursor = document.querySelector('#ball')
 
 document.addEventListener('mousemove', e => {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight ) {
         cursor.innerHTML = '<p>↑</p>'
     } else {
         cursor.innerHTML = '<p>↓</p>'
@@ -73,6 +73,14 @@ document.addEventListener('mousemove', e => {
 })
 
 
+const links = document.querySelectorAll('li')
+
+links.forEach(link => {
+    link.addEventListener('mouseover', () => {
+        const cursor = document.querySelector('#ball')
+        cursor.innerHTML = '<p>◎</p>'
+    })
+})
 
 
 mouse.setOrigin(container)
