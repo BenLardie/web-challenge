@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <title>Batman</title>
 </head>
+
 <body>
-    <div id="app">
-        <div id="ball"></div>
-    <div id="container">
-        <div id="inner">
-            <video autoplay muted loop>
-                <source src="NycTraffic.mp4" type="video/mp4">
-            </video>
+    
+        
+        <div class="loader">
+            <img src="https://media.giphy.com/media/y4G4trcBoUgWk/giphy.gif" alt="loading...">
         </div>
-    </div>
-    <section>
-        <p id="scroll">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rem. Aliquam ducimus, quod ad dolor cum sapiente cupiditate quo minima laudantium aperiam recusandae minus, explicabo veritatis optio nulla exercitationem. Ad.</p>
-    </section>
-    </div>
-    <script src="main.js"></script>
+    
+                <div id="ball"></div>
+           
+            <div id="container">
+                <div id="inner">
+                    <video autoplay muted loop>
+                        <source src="NycTraffic.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+                <div class="lax" data-lax-opacity="300 0, 3000 1, 12000 0 | offset=300" >
+                <p class="paragraph">
+                    (Na na na na na na na na na na na na na na na na)
+                    Batmaaaaaan!
+                    (Na na na na na na na na na na na na)
+                    Batmaaaaaan!
+                    (Na na na na na na na na na na na na)
+                    Batmaaaaaan!
+                    (Na na na na na na na na na na na na)
+                    Batmaaaaaan!
+                    (Na na na na na na na na na na na na)
+                    Batman! Batman! Batman!
+                    (Na na na na na na na na na na na na na na na na)
+                    Batman! Batman! Batman!
+                    Da da da da da da da da da da da da da!
+                    Batmaaaaaan!
+                </p>
+        </div>
+        <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script>
+        window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+    </script>
 </body>
+
 </html>
