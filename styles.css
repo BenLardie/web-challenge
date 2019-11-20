@@ -37,40 +37,6 @@ body {
         visibility: hidden;
     }
 }
-/* 
-#app {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: relative;
-}  */
-
-#cursor-wrapper {
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    z-index: 6000;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 
 #ball {
     width: 60px;
@@ -116,7 +82,7 @@ video {
     bottom: 0;
     font-family: 'Righteous', cursive;
     color: #ffe527;
-    font-size: 10vw;
+    font-size: 7vw;
     line-height: 1.24em;
     font-weight: 700;
     text-shadow: 1px 2px 55px rgba(0, 0, 0, 0.12);
