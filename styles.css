@@ -7,6 +7,7 @@ body {
     height: 5000px;
     background-color: grey;
     display: flex;
+    position: relative;
 }
 
 .loader {
@@ -47,8 +48,11 @@ body {
     border-radius: 50%;
     pointer-events: none;
     z-index: 1;
-    /* transition-duration: 200ms;
-    transition-timing-function: ease-out; */
+}
+
+#ball p {
+    text-align: center;
+    font-size: 3em;
 }
 
 #container {
@@ -86,4 +90,26 @@ video {
     line-height: 1.24em;
     font-weight: 700;
     text-shadow: 1px 2px 55px rgba(0, 0, 0, 0.12);
+}
+
+.bottom {
+    height: 800px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+li {
+    font-family: 'Righteous', cursive;
+    font-size: 12vw;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+li:hover {
+    transform: scale(1.1);
+    
 }

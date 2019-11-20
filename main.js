@@ -47,7 +47,7 @@ const isTimeToUpdate = () => {
 }
 
 const onMouseEnterHandler = (event) => {
-    update(event)
+  update(event);
 }
 
 const onMouseLeaveHandler = () => {
@@ -68,9 +68,10 @@ document.addEventListener('mousemove', e => {
 })
 
 
+
 mouse.setOrigin(container)
 container.onmouseenter = onMouseEnterHandler
-// container.onmouseleave = onMouseLeaveHandler
+container.onmouseleave = onMouseLeaveHandler
 container.onmousemove = onMouseMoveHandler
 
 

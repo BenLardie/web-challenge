@@ -11,52 +11,65 @@
 </head>
 
 <body>
-    
-        
-        <div class="loader">
-            <img src="https://media.giphy.com/media/y4G4trcBoUgWk/giphy.gif" alt="loading...">
-        </div>
-    
-                <div id="ball"></div>
-            <div id="container">
-                <div id="inner">
-                    <video autoplay muted loop>
-                        <source src="NycTraffic.mp4" type="video/mp4">
-                    </video>
-                </div>
+
+
+    <div class="loader">
+        <img src="https://media.giphy.com/media/y4G4trcBoUgWk/giphy.gif" alt="loading...">
+    </div>
+
+    <div id="ball">
+        <p>↓</p>
+    </div>
+    <div class="lax" data-lax-opacity="0 1, (document.body.scrollHeight*0.8) 0">
+        <div id="container">
+            <div id="inner">
+                <video autoplay muted loop>
+                    <source src="NycTraffic.mp4" type="video/mp4">
+                </video>
             </div>
-                <div class="lax" data-lax-opacity="300 0, 3000 1, 16000 0 | offset=300" >
-                <p class="paragraph">
-                    (Na na na na na na na na na na na na na na na na)
-                    Batmaaaaaan!
-                    (Na na na na na na na na na na na na)
-                    Batmaaaaaan!
-                    (Na na na na na na na na na na na na)
-                    Batmaaaaaan!
-                    (Na na na na na na na na na na na na)
-                    Batmaaaaaan!
-                    (Na na na na na na na na na na na na)
-                    Batman! Batman! Batman!
-                    (Na na na na na na na na na na na na na na na na)
-                    Batman! Batman! Batman!
-                    Da da da da da da da da da da da da da!
-                    Batmaaaaaan!
-                </p>
         </div>
-        <script src="main.js"></script>
+    </div>
+    <div class="lax" data-lax-opacity="300 0, 3000 1, 16000 0 | offset=300">
+        <p class="paragraph">
+            (Na na na na na na na na na na na na na na na na)
+            Batmaaaaaan!
+            (Na na na na na na na na na na na na)
+            Batmaaaaaan!
+            (Na na na na na na na na na na na na)
+            Batmaaaaaan!
+            (Na na na na na na na na na na na na)
+            Batmaaaaaan!
+            (Na na na na na na na na na na na na)
+            Batman! Batman! Batman!
+            (Na na na na na na na na na na na na na na na na)
+            Batman! Batman! Batman!
+            Da da da da da da da da da da da da da!
+            Batmaaaaaan!
+        </p>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <div class="bottom">
+        <ul>
+            <li>Bat Cave</li>
+            <li>Bat Fridge</li>
+            <li>Bat Sandwich</li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
-        window.onload = function() {
-	lax.setup() // init
+        window.onload = function () {
+            lax.setup() // init
 
-	const updateLax = () => {
-		lax.update(window.scrollY)
-		window.requestAnimationFrame(updateLax)
-	}
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
 
-	window.requestAnimationFrame(updateLax)
-}
+            window.requestAnimationFrame(updateLax)
+        }
     </script>
 </body>
 
