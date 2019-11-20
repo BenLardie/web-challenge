@@ -64,8 +64,14 @@ const onMouseMoveHandler = event => {
 const cursor = document.querySelector('#ball')
 
 document.addEventListener('mousemove', e => {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        cursor.innerHTML = '<p>↑</p>'
+    } else {
+        cursor.innerHTML = '<p>↓</p>'
+    }
     cursor.setAttribute('style', 'top: ' + (e.pageY + 10) + 'px; left: ' + (e.pageX + 10) + 'px;')
 })
+
 
 
 
